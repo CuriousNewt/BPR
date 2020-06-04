@@ -67,7 +67,12 @@ public class PlaceOnPlane : MonoBehaviour
 
             if (spawnedObject == null && spawnedObject != prefabToPlace)
             {
+                Quaternion hitRot = hitPose.rotation;
+
+                Quaternion rot = new Quaternion(hitRot.x, 0, hitRot.z, hitRot.w);
                 spawnedObject = Instantiate(prefabToPlace, hitPose.position, hitPose.rotation);
+                spawnedObject.transform.LookAt(transform.GetChild(0));
+                spawnedObject.transform.rotation = new Quaternion(rot.x, spawnedObject.transform.rotation.y, rot.z, rot.w);
             }
 
             else

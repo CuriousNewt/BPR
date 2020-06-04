@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectableObjectArray:
   - {fileID: 6090797120280322268, guid: 5ccbe0eb306813647b77ff5148219919, type: 3}
+  - {fileID: 6992303923706814419, guid: 922e36897d4ae034699be426539b23c3, type: 3}
+  - {fileID: 2100614494264752140, guid: 652d69871edf9e64d908329092b4f460, type: 3}
   SelectedGameObject: {fileID: 6090797120280322268, guid: 5ccbe0eb306813647b77ff5148219919,
     type: 3}
